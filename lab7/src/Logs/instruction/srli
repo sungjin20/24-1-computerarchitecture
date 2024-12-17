@@ -1,0 +1,88 @@
+Warning: file 'memory.vmh' for memory 'mem' has a gap at addresses 12 to 65535.
+Warning: file 'memory.vmh' for memory 'mem' has a gap at addresses 12 to 4294967295.
+
+cycle          0
+Fetch : from Pc          0 , updatedPC:          0, inst : %x, 
+addi r15 = r 0 0x2b
+
+Cycle          0 ----------------------------------------------------
+
+cycle          1
+do decoded
+Fetch : from Pc          4 , updatedPC:          4, inst : %x, 
+srli r16 = r15 0x1
+
+Cycle          1 ----------------------------------------------------
+
+cycle          2
+Execute done
+Fetch : from Pc          8 , updatedPC:          8, inst : %x, 
+srli r16 = r16 0x1
+
+Cycle          2 ----------------------------------------------------
+Write Back done
+
+cycle          3
+do decoded
+Fetch : from Pc         12 , updatedPC:         12, inst : %x, 
+srli r16 = r16 0x2
+
+Cycle          3 ----------------------------------------------------
+
+cycle          4
+Execute done
+
+Cycle          4 ----------------------------------------------------
+Write Back done
+
+cycle          5
+do decoded
+Fetch : from Pc         16 , updatedPC:         16, inst : %x, 
+addi r10 = r16 0xfffffffe
+
+Cycle          5 ----------------------------------------------------
+
+cycle          6
+Execute done
+
+Cycle          6 ----------------------------------------------------
+Write Back done
+
+cycle          7
+do decoded
+Fetch : from Pc         20 , updatedPC:         20, inst : %x, 
+csrrw r 0 csr0x780 r10
+
+Cycle          7 ----------------------------------------------------
+
+cycle          8
+Execute done
+
+Cycle          8 ----------------------------------------------------
+Write Back done
+
+cycle          9
+do decoded
+Fetch : from Pc         24 , updatedPC:         24, inst : %x, 
+addi r 0 = r 0 0x0
+
+Cycle          9 ----------------------------------------------------
+
+cycle         10
+Execute done
+
+Cycle         10 ----------------------------------------------------
+Write Back done
+
+cycle         11
+do decoded
+Fetch : from Pc         28 , updatedPC:         28, inst : %x, 
+addi r 0 = r 0 0x0
+
+Cycle         11 ----------------------------------------------------
+
+cycle         12
+Execute done
+
+Cycle         12 ----------------------------------------------------
+Write Back done
